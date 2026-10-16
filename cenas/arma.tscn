@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bmfcqdpdiohnj"]
+
+[ext_resource type="Script" uid="uid://bqpa0kkivyd7a" path="res://scripts/arma.gd" id="1_qh7hn"]
+[ext_resource type="Texture2D" uid="uid://bkviqcurpxfg1" path="res://Ninja Adventure - Asset Pack/Items/Weapons/Katana/Sprite.png" id="1_qsbbb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wxigr"]
+size = Vector2(6, 14)
+
+[node name="Area2D" type="Area2D" unique_id=994094728]
+script = ExtResource("1_qh7hn")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1466816054]
+texture = ExtResource("1_qsbbb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=192226493]
+shape = SubResource("RectangleShape2D_wxigr")
+
+[connection signal="body_shape_entered" from="." to="." method="_on_bod_entered"]
