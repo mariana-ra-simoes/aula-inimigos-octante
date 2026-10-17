@@ -2,6 +2,7 @@
 
 [ext_resource type="TileSet" uid="uid://dakrbdxrm1s4f" path="res://tileset_map.tres" id="1_mtgg2"]
 [ext_resource type="PackedScene" uid="uid://bevyf1srukuml" path="res://cenas/player.tscn" id="2_t4ukd"]
+[ext_resource type="PackedScene" uid="uid://3ryhg5v4jc8b" path="res://cenas/lizard.tscn" id="3_4fhxt"]
 
 [node name="Main" type="Node2D" unique_id=1982549189]
 
@@ -29,3 +30,6 @@ limit_left = 0
 limit_top = 0
 limit_right = 640
 limit_bottom = 365
+
+[node name="Lizard" parent="." unique_id=1794291363 instance=ExtResource("3_4fhxt")]
+position = Vector2(349, 214)
